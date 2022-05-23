@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kalorienrechner</title>
+</head>
+
+<body>
+    <section>
+        <h1>Kalorienrechner</h1>
+        <form onsubmit="return false">
+            <input type="radio" name="geschlecht" id="weiblich">
+            <label for="weiblich">weiblich</label><br>
+            <input type="radio" name="geschlecht" id="männlich">
+            <label for="männlich">männlich</label>
+            <p>Wie alt bist du?</p>
+            <input type="number" name="" id="alter">
+            <label for="alter">Jahre</label>
+            <p>Wie groß bist du?</p>
+            <input type="number" name="" id="groesse">
+            <label for="groesse">cm</label>
+            <p>Wie viel wiegst du?</p>
+            <input type="number" name="" id="gewicht">
+            <label for="gewicht">kg</label>
+            <p>Wie verbringst du deine Zeit hauptsächlich?
+                <select name="" id="zeitvertreib">
+                    <option value="1">Schlafen</option>
+                    <option value="2">Nur Sitzen oder Liegen</option>
+                    <option value="3">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in
+                        der Freizeit, z.B. Büroarbeit</option>
+                    <option value="4">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                        Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="5">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                        Mechaniker, Hausfrauen
+                    </option>
+                    <option value="6">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+            </p>
+            <input type="submit" value="Berechnen" onclick="berechne()">
+        </form>
+
+        <h2>Grundumsatz</h2>
+        <h3>kcal</h3>
+        <p id="grUkcal"></p>
+        <h3>kJ</h3>
+        <p id="grUkj"></p>
+        <h2>Gesamtumsatz</h2>
+        <h3>kcal</h3>
+        <p id="gUkcal"></p>
+        <h3>kJ</h3>
+        <p id="gUkj"></p>
+        <p>Angaben ohne 🔫</p>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
